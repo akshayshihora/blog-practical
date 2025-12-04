@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "The Ultimate Guide to Full-Body Workouts",
+    "desc": "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.",
+    "image": "/1.png",
+    "author": "Alex Carter"
+  },
+  {
+    "id": 2,
+    "title": "5 Tips for Better Cardio Sessions",
+    "desc": "Improve your cardio performance with these simple yet effective techniques to maximize stamina and get the most from each workout.",
+    "image": "/2.jpg",
+    "author": "Maya Lee"
+  },
+  {
+    "id": 3,
+    "title": "Meal Prep Basics for Gym Enthusiasts",
+    "desc": "Fuel your workouts with balanced, easy-to-prepare meals. A guide on planning, prepping, and staying consistent with nutrition.",
+    "image": "/3.jpg",
+    "author": "Jordan Smith"
+  },
+  {
+    "id": 4,
+    "title": "Building Core Strength: Exercises and Benefits",
+    "desc": "A strong core is essential for stability and injury prevention. Learn the best exercises to enhance your core power.",
+    "image": "/4.jpg",
+    "author": "Emma Rodriguez"
+  }
+]

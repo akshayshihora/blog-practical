@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "full-body-workouts",
+    "title": "The Ultimate Guide to Full-Body Workouts",
+    "author": "Alex Carter",
+    "date": "23 January 2025",
+    "image": "/banner.png",
+    "paragraphs": [
+      "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.",
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.",
+      "mus Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.",
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus."
+    ],
+    "authorBio": "With over a decade of experience in the fitness industry, Alex specializes in strength training and\nfunctional fitness. Certified by NASM and known for his motivational style, Alex designs workout\nprograms that are both challenging and achievable. His passion lies in helping clients build strength and\nconfidence through personalized routines. Outside the gym, Alex is an avid runner and enjoys\noutdoor adventures.",
+    "extraPoints": [
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.",
+      "mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.",
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.",
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+    ],
+    "previous": "5 Tips for Better Cardio Sessions",
+    "next": "Meal Prep Basics for Gym Enthusiasts",
+    "comments": [
+      {
+        "name": "Kang Haerin",
+        "rating": 5,
+        "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus ",
+        "date": "22 Jul 2022"
+      },
+      {
+        "name": "Kang Haerin",
+        "rating": 5,
+        "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus ",
+        "date": "22 Jul 2022"
+      }
+    ]
+  }
+]
