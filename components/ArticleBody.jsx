@@ -3,7 +3,7 @@ export default function ArticleBody({ post }) {
     <>
       <div className="top-info-bar">
         <div className="author-left">
-          <img src="/alex.png" className="author-icon" />
+          <img src="/Alex.png" className="author-icon" />
           <span className="author-name">{post?.author}</span>
         </div>
 
