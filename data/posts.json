@@ -32,6 +32,18 @@
         "rating": 5,
         "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus ",
         "date": "22 Jul 2022"
+      },
+      {
+        "name": "akshay",
+        "comment": "this is a front end developer comment",
+        "rating": 5,
+        "date": "Fri Dec 05 2025"
+      },
+      {
+        "name": "test",
+        "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus\ntesttttt",
+        "rating": 5,
+        "date": "Fri Dec 05 2025"
       }
     ]
   }

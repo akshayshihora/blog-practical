@@ -36,7 +36,7 @@ export default function Post({ post }) {
           </div>
           <Sidebar />
         </div>
-        <Comments comments={post?.comments} />
+       <Comments comments={post?.comments} slug={post.slug} />
       </div>
       <RelatedArticles />
     </div>
