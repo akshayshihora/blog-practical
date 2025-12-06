@@ -31,8 +31,8 @@ export default function Post({ post }) {
           <div className="left">
             <ArticleBody post={post} />
             <ExtraPoints points={post?.extraPoints} />
-            <AboutAuthor author={post?.author} />
-            <PrevNext previous={post?.previous} next={post?.next} />
+            <AboutAuthor author={post?.authors} />
+            {/* <PrevNext previous={post?.previous} next={post?.next} /> */}
           </div>
           <Sidebar />
         </div>

@@ -12,6 +12,15 @@ export default function handler(req, res) {
     return res.status(200).json(post.comments || []);
   }
 
+  function formatDate(dateString) {
+  const date = new Date(dateString);
+  const day = date.getDate();
+  const month = date.toLocaleString("en-US", { month: "short" });
+  const year = date.getFullYear();
+  
+  return `${day} ${month} ${year}`;
+}
+
   if (req.method === "POST") {
     const { slug, name, email, comment, rating } = req.body;
 
@@ -22,7 +31,7 @@ export default function handler(req, res) {
       name,
       rating,
       comment,
-      date: new Date().toDateString(),
+      date: formatDate(new Date())
     };
 
     posts[postIndex].comments.push(newComment);
