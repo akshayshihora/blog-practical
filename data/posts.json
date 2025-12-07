@@ -5,23 +5,23 @@
     "author": "Alex Carter",
     "date": "23 January 2025",
     "image": "/banner.png",
-   "authors": [
-  {
-    "name": "Alex Carter",
-    "image": "/Alex.png",
-    "bio": "With over a decade of experience in the fitness industry, Alex specializes in strength training and functional fitness. Certified by NASM, he creates programs that balance intensity and long-term sustainability. Alex is passionate about helping people build confidence through mindful movement."
-  },
-  {
-    "name": "Sarah Johnson",
-    "image": "/Bitmap (1).png",
-    "bio": "Sarah is a certified yoga instructor dedicated to improving flexibility, balance, and mental clarity. With 10,000+ students trained, she blends traditional yoga with modern mobility techniques. Her sessions focus on mindfulness, breath control, and sustainable wellness."
-  },
-  {
-    "name": "Liza Cary",
-    "image": "/Bitmap.png",
-    "bio": "Liza is a professional strength and conditioning coach known for helping athletes build explosive power. As a former national-level lifter, she brings real training experience into her programs. She emphasizes technique, progressive overload, and long-term athletic development."
-  }
-],
+    "authors": [
+      {
+        "name": "Alex Carter",
+        "image": "/Alex.png",
+        "bio": "With over a decade of experience in the fitness industry, Alex specializes in strength training and functional fitness. Certified by NASM, he creates programs that balance intensity and long-term sustainability. Alex is passionate about helping people build confidence through mindful movement."
+      },
+      {
+        "name": "Sarah Johnson",
+        "image": "/Bitmap (1).png",
+        "bio": "Sarah is a certified yoga instructor dedicated to improving flexibility, balance, and mental clarity. With 10,000+ students trained, she blends traditional yoga with modern mobility techniques. Her sessions focus on mindfulness, breath control, and sustainable wellness."
+      },
+      {
+        "name": "Liza Cary",
+        "image": "/Bitmap.png",
+        "bio": "Liza is a professional strength and conditioning coach known for helping athletes build explosive power. As a former national-level lifter, she brings real training experience into her programs. She emphasizes technique, progressive overload, and long-term athletic development."
+      }
+    ],
     "paragraphs": [
       "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.",
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.",
@@ -61,6 +61,12 @@
         "rating": 4,
         "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus",
         "date": "6 Dec 2025"
+      },
+      {
+        "name": "mit",
+        "rating": 2,
+        "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus",
+        "date": "7 Dec 2025"
       }
     ]
   }
