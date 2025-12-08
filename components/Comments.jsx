@@ -10,6 +10,14 @@ export default function Comments({ comments, slug }) {
     rating: 5,
   });
 
+  // ERROR STATE FOR EACH FIELD
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    comment: "",
+    rating: "",
+  });
+
   // Load comments dynamically
   useEffect(() => {
     fetch(`/api/comments?slug=${slug}`)
@@ -17,8 +25,38 @@ export default function Comments({ comments, slug }) {
       .then((data) => setAllComments(data));
   }, [slug]);
 
+  // Validation function
+  const validateForm = () => {
+    let valid = true;
+    let newErrors = { name: "", email: "", comment: "", rating: "" };
+
+    if (!form.name.trim()) {
+      newErrors.name = "Name is required";
+      valid = false;
+    }
+
+    if (!form.email.trim()) {
+      newErrors.email = "Email is required";
+      valid = false;
+    }
+
+    if (!form.comment.trim()) {
+      newErrors.comment = "Comment is required";
+      valid = false;
+    }
+
+    if (!form.rating || form.rating < 1) {
+      newErrors.rating = "Please select a rating.";
+      valid = false;
+    }
+
+    setErrors(newErrors);
+    return valid;
+  };
+
   // Submit comment
   const handleSubmit = async () => {
+    if (!validateForm()) return; // stop if errors
     const res = await fetch("/api/comments", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -28,8 +66,9 @@ export default function Comments({ comments, slug }) {
     const newComment = await res.json();
     setAllComments([...allComments, newComment]);
 
-    // Reset form
+    // Reset form & errors
     setForm({ name: "", email: "", comment: "", rating: 5 });
+    setErrors({ name: "", email: "", comment: "", rating: "" });
   };
 
   return (
@@ -71,6 +110,8 @@ export default function Comments({ comments, slug }) {
               value={form.name}
               onChange={(e) => setForm({ ...form, name: e.target.value })}
             />
+            {errors.name && <p style={{ color: "red", fontSize: "14px" }}>{errors.name}</p>}
+
             <label className="input-label">Email</label>
             <input
               type="email"
@@ -79,61 +120,54 @@ export default function Comments({ comments, slug }) {
               value={form.email}
               onChange={(e) => setForm({ ...form, email: e.target.value })}
             />
+            {errors.email && <p style={{ color: "red", fontSize: "14px" }}>{errors.email}</p>}
           </div>
+
           <div className="right-fields">
             <label className="input-label">Comment</label>
             <textarea
               className="textarea-large"
               placeholder="Write your comment here..."
               value={form.comment}
-              onChange={(e) =>
-                setForm({ ...form, comment: e.target.value })
-              }
+              onChange={(e) => setForm({ ...form, comment: e.target.value })}
             ></textarea>
+            {errors.comment && <p style={{ color: "red", fontSize: "14px" }}>{errors.comment}</p>}
           </div>
         </div>
+
         <div className="rating-container">
           <div className="inner-rating-container">
-          <p className="rating-label">
-  Rate The Usefulness Of The Article
-  {form.rating && (
-    <span style={{ marginLeft: "10px", fontWeight: "bold" }}>
-      (Selected: {form.rating})
-    </span>
-  )}
-</p>
+            <p className="rating-label">
+              Rate The Usefulness Of The Article
+              {form.rating && (
+                <span style={{ marginLeft: "10px", fontWeight: "bold" }}>
+                  (Selected: {form.rating})
+                </span>
+              )}
+            </p>
+
             <div className="rating-actions">
+              <img src="/engry.svg" className="emoji"
+                onClick={() => setForm({ ...form, rating: 1 })} />
+              <img src="/orange-engry.svg" className="emoji"
+                onClick={() => setForm({ ...form, rating: 2 })} />
+              <img src="/yellow-engry.svg" className="emoji"
+                onClick={() => setForm({ ...form, rating: 3 })} />
+              <img src="/heart-happy.svg" className="emoji"
+                onClick={() => setForm({ ...form, rating: 4 })} />
 
-              <img
-                src="/engry.svg"
-                className="emoji"
-                onClick={() => setForm({ ...form, rating: 1 })}
-              />
-              <img
-                src="/orange-engry.svg"
-                className="emoji"
-                onClick={() => setForm({ ...form, rating: 2 })}
-              />
-              <img
-                src="/yellow-engry.svg"
-                className="emoji"
-                onClick={() => setForm({ ...form, rating: 3 })}
-              />
-              <img
-                src="/heart-happy.svg"
-                className="emoji"
-                onClick={() => setForm({ ...form, rating: 4 })}
-              />
-
-              <button
-                className="good-btn"
-                onClick={() => setForm({ ...form, rating: 5 })}
-              >
+              <button className="good-btn"
+                onClick={() => setForm({ ...form, rating: 5 })}>
                 <img src="/star-happy.svg" className="good-icon" />
                 Good
               </button>
             </div>
+
+            {errors.rating && (
+              <p style={{ color: "red", fontSize: "14px" }}>{errors.rating}</p>
+            )}
           </div>
+
           <button className="send-btn" onClick={handleSubmit}>
             <img src="/message.svg" className="send-icon" />
             Send
